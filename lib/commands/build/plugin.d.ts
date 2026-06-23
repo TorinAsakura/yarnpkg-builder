@@ -6,5 +6,6 @@ export default class BuildPluginCommand extends Command {
     sourceMap: boolean;
     metafile: boolean;
     external: string[];
+    externalFile: string | undefined;
     execute(): Promise<0 | 1>;
 }

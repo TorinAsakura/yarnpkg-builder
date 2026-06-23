@@ -11,5 +11,6 @@ export default class BuildBundleCommand extends Command {
     format: string;
     target: string;
     external: string[];
+    externalFile: string | undefined;
     execute(): Promise<0 | 1>;
 }
