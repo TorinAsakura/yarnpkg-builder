@@ -1,0 +1,36 @@
+{
+  "name": "@yarnpkg/builder",
+  "version": "4.2.3",
+  "license": "BSD-2-Clause",
+  "bin": {
+    "builder": "./lib/cli.js"
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./cli": "./lib/cli.js",
+    "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "@yarnpkg/cli": "^4.17.0",
+    "@yarnpkg/core": "^4.9.0",
+    "@yarnpkg/fslib": "^3.1.5",
+    "chalk": "^4.1.2",
+    "clipanion": "^4.0.0-rc.2",
+    "esbuild": "npm:esbuild-wasm@^0.23.0",
+    "semver": "^7.1.2",
+    "tslib": "^2.4.0"
+  },
+  "files": [
+    "/lib/**/*",
+    "/sources/**/*",
+    "/README.md",
+    "/LICENSE.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TorinAsakura/yarnpkg-builder.git"
+  },
+  "engines": {
+    "node": ">=18.12.0"
+  }
+}
